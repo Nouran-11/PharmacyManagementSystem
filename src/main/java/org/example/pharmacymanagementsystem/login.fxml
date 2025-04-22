@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pharmacymanagementsystem.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="432.0" fitWidth="235.0" layoutY="2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../../../Users/fatma/Downloads/baby%20blu.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="138.0" fitWidth="236.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Users/fatma/Downloads/cef73717-7bcd-4681-a2d7-ba54a9570b49_removalai_preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="300.0" prefWidth="283.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="55.0" layoutX="121.0" layoutY="51.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../../../Users/fatma/Downloads/291b4c55-6280-496f-8fa0-0246eed545ba_removalai_preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="142.0" text="Username">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="81.0" layoutY="137.0" prefHeight="25.0" prefWidth="163.0" promptText="Username" />
+            <Label layoutX="14.0" layoutY="202.0" text="Password">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="enterPasswordField" layoutX="81.0" layoutY="197.0" prefHeight="25.0" prefWidth="163.0" promptText="Password" />
+            <Button fx:id="loginbutton" layoutX="24.0" layoutY="269.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #D6F1FF;" text="Login">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelbutton" layoutX="24.0" layoutY="320.0" mnemonicParsing="false" onAction="#cancelButtononAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #D6F1FF;" text="Cancel">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="239.0" prefHeight="16.0" prefWidth="256.0" text="Invalid Login. Please try again." textFill="#ef0808">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
